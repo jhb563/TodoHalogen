@@ -29,10 +29,10 @@ todoList = H.parentComponent
   }
 
   where
-render :: TodoListState -> H.ParentHTML TodoListQuery AddTodoFormQuery AddTodoFormSlot m
-render todos =
-  let taskList = HH.ul_ (map renderTask todos)
-  in  HH.div_ [taskList, formSlot]
+    render :: TodoListState -> H.ParentHTML TodoListQuery AddTodoFormQuery AddTodoFormSlot m
+    render todos =
+      let taskList = HH.ul_ (map renderTask todos)
+      in  HH.div_ [taskList, formSlot]
 
     renderTask :: Todo -> H.ParentHTML TodoListQuery AddTodoFormQuery AddTodoFormSlot m
     renderTask (Todo t) = HH.div_ 

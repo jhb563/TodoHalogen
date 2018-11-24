@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "purescript-halogen": "^4.0.0",
-    "purescript-routing": "^8.0.0"
+    "purescript-routing": "^8.0.0",
+    "purescript-affjax": "^7.0.0",
+    "purescript-argonaut-core": "^4.0.1",
+    "purescript-aff-coroutines": "^7.0.0"
   }
 }
